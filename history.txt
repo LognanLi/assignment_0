@@ -1,0 +1,16 @@
+  985  git stash push -u -m "save mistaken conflict2 edits" &&\ngit switch main &&\ngit branch -D conflict2 &&\ngit switch -c conflict2 &&\npython3 -c 'from pathlib import Path; p=Path("feature.txt"); lines=p.read_text().splitlines(keepends=True); lines[0]="Conflict2: "+lines[0]; p.write_text("".join(lines)); p=Path("README.md"); lines=p.read_text().splitlines(keepends=True); i=next(i for i,line in enumerate(lines) if line.startswith("# ")); lines.insert(i+1,"This line was added on conflict2.\n"); p.write_text("".join(lines))' &&\ngit diff
+  986  git add feature.txt README.md &&\ngit commit -m "Add conflict2 changes" &&\ngit push origin conflict2
+  987  git switch main &&\ngit pull origin main
+  988  git switch main &&\ngit pull origin main
+  989  printf 'secrets/\nno-commit.txt\n' > .gitignore &&\ngit add .gitignore &&\ngit commit -m "Add gitignore rules" &&\ngit push origin main &&\ntouch no-commit.txt &&\ngit check-ignore -v no-commit.txt &&\ngit status --short
+  990  git push origin main
+  991  # Write 200 most recent bash commands to history.txt\nhistory | tail -n 200 >> history.txt
+  992  # Write 200 most recent bash commands to history.txt\nhistory | tail -n 200 >> history.txt
+  993  # Write 200 most recent bash commands to history.txt\nhistory | tail -n 200 >> history.txt
+  994  ¬history | tail -n 200 >> history.txt\ngrep -F 'Hello Bash!' history.txt
+  995  pwd
+  996  history | tail -n 200 >> history.txt\ngrep -F 'Hello Bash!' history.txt
+  997  history | tail -n 1000 >> history.txt\ngrep -E '^[[:space:]]*[0-9]+[[:space:]]+echo "Hello Bash!"$' history.txt
+  998  echo "Hello Bash\nhistory | tail -n 1000 > history.txt\ngrep -E '^[[:space:]]*[0-9]+[[:space:]]+echo "Hello Bash\!"$' history.txt\necho 'Hello Bash\!\necho 'hello bash\!'\nhistory | tail -n 1000 > history.txt
+  999  echo "Hello Bash\nhistory | tail -n 1000 > history.txt
+ 1000  echo 'Hello Bash!'
