@@ -1,16 +1,22 @@
  1004  cd ~/code_stuff/cs61d
  1005  pwd
- 1006  git clone https://github.com/YOUR-USERNAME/YOUR-NEW-REPO.git\ncd assignment0
+ 1006  git clone https://github.com/YOUR-USERNAME/YOUR-NEW-REPO.git
+cd assignment0
  1007  git clone https://github.com/LognanLi/assignment0.git
  1008  ls
  1009  cd assignment0
  1010  ls
- 1011  printf 'https://github.com/LognanLi/assignment_0\n' > repo.txt
- 1012  npm install\nnpx vitest run
- 1013  cd ~/code_stuff/cs61d\ncat history.txt
+ 1011  printf 'https://github.com/LognanLi/assignment_0
+' > repo.txt
+ 1012  npm install
+npx vitest run
+ 1013  cd ~/code_stuff/cs61d
+cat history.txt
  1014  pwd
  1015  ls
  1016  cd assignment0
  1017  grep -n "Check bash commands\|Check git commands\|history" tests/history.test.ts
- 1018  cd ~/code_stuff/cs61d\ngrep -E '(^|[[:space:]])(ls|cd|mkdir|touch|mv|rm)([[:space:]]|$)' history.txt | head
- 1019  cd ~/code_stuff/cs61d\ngrep -E '(^|[[:space:]])(ls|cd|mkdir|touch|mv|rm)([[:space:]]|$)' history.txt | head
+ 1018  cd ~/code_stuff/cs61d
+grep -E '(^|[[:space:]])(ls|cd|mkdir|touch|mv|rm)([[:space:]]|$)' history.txt | head
+ 1019  cd ~/code_stuff/cs61d
+grep -E '(^|[[:space:]])(ls|cd|mkdir|touch|mv|rm)([[:space:]]|$)' history.txt | head
