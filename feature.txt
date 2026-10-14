@@ -1,1 +1,1 @@
-Conflict2: hello world
+Conflict1 + Conflict2: hello world
